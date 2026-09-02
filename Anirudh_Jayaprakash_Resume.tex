@@ -39,8 +39,8 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure PDF is machine readable
 \pdfgentounicode=1
@@ -58,14 +58,14 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-9pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-9pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -75,7 +75,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
@@ -93,7 +93,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{Machine Learning Engineer with hands-on experience building diffusion models, multi-agent AI systems (CrewAI, LangChain), and production ML pipelines. Published researcher (\href{https://ieeexplore.ieee.org/document/10353415}{IEEE Xplore}, GCAT 2023) with expertise in computer vision, NLP, and GenAI. Proficient in Python, PyTorch, TensorFlow, SQL, and cloud-native deployment using Docker, AWS, and CI/CD.}
-\vspace{-8pt}
+\vspace{-6pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -107,7 +107,7 @@
      \textbf{Web, APIs \& Databases}{: Flask, Gradio, REST APIs, Postman, Selenium, PostgreSQL, MySQL, MongoDB, SQLite, pgvector, ChromaDB}
     }}
  \end{itemize}
-\vspace{-8pt}
+\vspace{-6pt}
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
@@ -125,7 +125,6 @@
           \resumeItemListStart
             \resumeItem{Engineered a diffusion-based super-resolution architecture with U-Net and Swin Transformer blocks for 4x image enhancement.}
             \resumeItem{Integrated VQGAN latent-space processing to improve generation quality and computational efficiency.}
-            \resumeItem{Delivered an end-to-end model pipeline for high-quality super-resolved outputs.}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -133,7 +132,6 @@
           \resumeItemListStart
             \resumeItem{Built a multi-agent NBA Q\&A system with CrewAI, FastAPI, and Pandas, exposing a REST API with 5 structured data tools; achieved 100\% tool-use rate on a golden eval set.}
             \resumeItem{Added reliability guardrails to the agent pipeline (groundedness gate, TTL caching, retry logic, tool-call budgeting), reaching 1.0 faithfulness and 92\% tool-call success at 2.7s p50 latency.}
-            \resumeItem{Built an automated eval harness with a golden dataset scoring faithfulness and tool accuracy, hitting 100\% pass offline and 83\% pass in the full end-to-end agent pipeline before release.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
