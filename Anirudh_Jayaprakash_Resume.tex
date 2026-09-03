@@ -101,11 +101,11 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, C, C++, Java, SQL, R} \\
-     \textbf{Machine Learning \& AI}{: PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, Diffusion Models, U-Net, Swin Transformers, LLMs, Generative AI} \\
-     \textbf{LLM \& Agentic AI}{: RAG, Prompt Engineering, LangChain, CrewAI, Vector Embeddings, Function Calling} \\
-     \textbf{Data Engineering \& Big Data}{: ETL/ELT Pipelines, Distributed Data Processing, Apache Spark, Databricks, Data Lakes, Data Validation} \\
+     \textbf{Machine Learning \& AI}{: PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, Diffusion Models, U-Net, Swin Transformers, vLLM, MCP, Generative AI} \\
+     \textbf{LLM \& Agentic AI}{: RAG, Prompt Engineering, LangChain, CrewAI, Vector Embeddings, LLM Fine-Tuning (LoRA/QLoRA)} \\
+     \textbf{Data Engineering \& Big Data}{: ETL/ELT Pipelines, Distributed Data Processing, Apache Spark, Apache Airflow, Snowflake, Databricks, Data Lakes, Data Validation} \\
      \textbf{Cloud \& MLOps}{: AWS, Azure, Docker, Jenkins, CI/CD, MLflow, Git} \\
-     \textbf{Web, APIs \& Databases}{: Flask, Gradio, REST APIs, Postman, Selenium, PostgreSQL, MySQL, MongoDB, SQLite, pgvector, ChromaDB}
+     \textbf{Web, APIs \& Databases}{: Flask, Gradio, REST APIs, Selenium, PostgreSQL, MySQL, MongoDB, SQLite, pgvector, ChromaDB}
     }}
  \end{itemize}
 \vspace{-6pt}
@@ -114,7 +114,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Multi-LoRA Adapter Serving with vLLM} $|$ \emph{GitHub}}{September 2026}
+          {\textbf{Multi-LoRA Adapter Serving with vLLM} $|$ \emph{GitHub}}{August 2026 -- September 2026}
           \resumeItemListStart
             \resumeItem{Fine-tuned 3 task-specialized LoRA adapters (SQL generation, dialogue summarization, NER-to-JSON extraction) on a shared Llama-3.2-3B base using PEFT/TRL, then served all 3 simultaneously from a single vLLM engine via LoRARequest routing, eliminating reloading and duplicate model copies.}
             \resumeItem{Debugged and resolved 5+ compatibility issues across the PyTorch/vLLM/trl stack (GPU kernel mismatches, KV-cache memory limits, deprecated dataset loading, library API drift), documenting root causes and fixes for reproducibility.}
